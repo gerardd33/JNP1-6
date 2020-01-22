@@ -26,7 +26,7 @@ void Playlist::remove(int position) {
 	(this->list).erase((this->list).begin() + position);
 }
 
-void Playlist::setMode(Mode *mode) {
-	this->mode = mode;
+void Playlist::setMode(Mode *newMode) {
+	this->mode = newMode;
 }
 

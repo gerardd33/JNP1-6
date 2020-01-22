@@ -3,10 +3,9 @@
 
 #include <string>
 
-class PlayerException :  {
+class PlayerException : public std::exception {
 public:
-	std::string what();
+	// TODO: jakis overriding tego what itp
 };
-
 
 #endif //JNP1_6_PLAYEREXCEPTION_H
