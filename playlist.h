@@ -9,18 +9,20 @@
 
 class Playlist : public Playable {
 private:
-	std::vector<Playable *> list;
-	Mode *mode;
+    std::vector<Playable *> list;
+    Mode *mode;
 public:
-	void add(Playable *playable);
+    void add(Playable *playable);
 
-	void add(Playable *playable, int position);
+    void add(Playable *playable, int position);
 
-	void remove();
+    void remove();
 
-	void remove(int position);
+    void remove(int position);
 
-	void setMode(Mode *mode);
+    void setMode(Mode *mode);
+
+    void play() override;
 };
 
 
