@@ -2,7 +2,7 @@
 #include "file.h"
 
 
-std::string* File::getDataField(std::string dataFieldName) {
+std::string* File::getDataField(const std::string& dataFieldName) {
 	auto it = metadata.find(dataFieldName);
 	if (it != metadata.end())
 		return &(it->second);
@@ -29,4 +29,8 @@ File::File(const std::string& data) {
 	}
 
 	metadata[CONTENT_FIELD_NAME] = fieldName;
+}
+
+std::string File::getType() const {
+	return metadata.at(TYPE_FIELD_NAME);
 }

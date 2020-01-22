@@ -1,7 +1,7 @@
 #include "player.h"
 
 
-Playable *Player::openFile(const File&) {
+Playable *Player::openFile(const File& file) {
 
 }
 

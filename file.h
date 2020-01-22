@@ -11,7 +11,8 @@ const std::string CONTENT_FIELD_NAME = "|content";
 class File {
 public:
 	explicit File(const std::string& data);
-	std::string* getDataField(std::string dataFieldName);
+	std::string* getDataField(const std::string& dataFieldName);
+	[[nodiscard]] std::string getType() const;
 
 private:
 	std::map<std::string, std::string> metadata;
