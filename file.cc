@@ -9,8 +9,8 @@ std::string* File::getDataField(std::string dataFieldName) {
 	else return nullptr;
 }
 
-// TODO: czy tutaj w argumencie powinno byc const
-File::File(std::string& data) {
+// TODO: czy tutaj w argumencie na pewno powinno byc const
+File::File(const std::string& data) {
 	if (data.empty())
 		return;
 
