@@ -1,23 +1,23 @@
 #include "player.h"
 
 
+Playlist* Player::createPlaylist(std::string name) {
+	return nullptr; //TODO cykle
+}
+
 Playable* Player::openFile(const File& file) {
 	// TODO: jak z tymi pointerami tu, jakis smart, dynamic_cast?
 	Playable* result;
 	std::string type = file.getType();
 
 	if (type == "audio")
-		result = openSong(file);
+		// TODO: ...
 	else if (type == "video")
-		result = openMovie(file);
+		// TODO: ...
 	else throw PlayerException();
 	// TODO: zmien na unsupported type exception
 
 	return result;
-}
-
-Playlist* Player::createPlaylist(std::string name) {
-	return nullptr; //TODO cykle
 }
 
 SequenceMode* createSequenceMode() {

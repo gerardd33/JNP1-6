@@ -14,8 +14,6 @@ class Player {
 public:
 	Playable *openFile(const File&);
 	// TODO: czy te open powinny byc tutaj, czy w ich klasach, czy gdzie???
-	Movie* openMovie(const File& file);
-	Song* openSong(const File& file);
 
 	Playlist *createPlaylist(std::string name);
 };
