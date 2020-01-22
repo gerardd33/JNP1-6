@@ -2,12 +2,13 @@
 #define SHUFFLEMODE_H
 
 #include "mode.h"
+#include <random>
 
 class ShuffleMode : public Mode {
 private:
-    int seed;
+    std::default_random_engine engine;
 public:
-    ShuffleMode(int seed) : seed(seed) {}
+    ShuffleMode(int seed) : engine(std::default_random_engine(seed)) {}
 
     std::vector<unsigned int> getOrder(std::vector<Playable *> list) override;
 };
