@@ -5,7 +5,17 @@
 #include <iostream>
 
 class Song : public Playable {
+public:
 	void play() override;
+	Song(std::string artist, std::string title,
+			 std::string content) : artist(std::move(artist)),
+			 												title(std::move(title)),
+			 												content(std::move(content)) {}
+
+private:
+	std::string artist;
+	std::string title;
+	std::string content;
 };
 
 

@@ -6,7 +6,17 @@
 
 
 class Movie : public Playable {
+public:
 	void play() override;
+	Movie(std::string year, std::string title,
+				std::string content) : year(std::move(year)),
+															 title(std::move(title)),
+															 content(std::move(content)) {}
+
+private:
+	std::string year;
+	std::string title;
+	std::string content;
 };
 
 
