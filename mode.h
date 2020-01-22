@@ -2,10 +2,11 @@
 #define MODE_H
 
 #include <vector>
+#include "playable.h"
 
 class Mode {
 public:
-    virtual std::vector<unsigned int> getOrder() = 0;
+    virtual std::vector<unsigned int> getOrder(std::vector<Playable *> list) = 0;
 };
 
 
