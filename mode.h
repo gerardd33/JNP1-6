@@ -9,4 +9,4 @@ public:
 };
 
 
-#endif //PLAYER_MODE_H
+#endif //MODE_H
