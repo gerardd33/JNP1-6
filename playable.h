@@ -4,7 +4,7 @@
 
 class Playable {
 public:
-	void play();
+	virtual void play() = 0;
 };
 
 

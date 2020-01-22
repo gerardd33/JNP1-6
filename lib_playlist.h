@@ -1,10 +1,10 @@
 #ifndef JNP1_6_LIB_PLAYLIST_H
 #define JNP1_6_LIB_PLAYLIST_H
 
-#include <string>
 #include "file.h"
 #include "playable.h"
 #include "playerException.h"
+#include <string>
 
 
 class Player {

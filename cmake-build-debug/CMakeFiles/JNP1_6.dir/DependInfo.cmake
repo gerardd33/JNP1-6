@@ -7,8 +7,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/file.cc" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/file.cc.o"
   "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/lib_playlist.cc" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/lib_playlist.cc.o"
   "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/main.cpp" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/main.cpp.o"
-  "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playable.cc" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/playable.cc.o"
+  "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/movie.cc" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/movie.cc.o"
   "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playerException.cc" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/playerException.cc.o"
+  "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/song.cc" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/song.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

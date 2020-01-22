@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/JNP1_6.dir/main.cpp.o CMakeFiles/JNP1_6.dir/lib_playlist.cc.o CMakeFiles/JNP1_6.dir/file.cc.o CMakeFiles/JNP1_6.dir/playerException.cc.o CMakeFiles/JNP1_6.dir/playable.cc.o  -o JNP1_6 
+/usr/bin/c++  -g   CMakeFiles/JNP1_6.dir/main.cpp.o CMakeFiles/JNP1_6.dir/lib_playlist.cc.o CMakeFiles/JNP1_6.dir/file.cc.o CMakeFiles/JNP1_6.dir/playerException.cc.o CMakeFiles/JNP1_6.dir/song.cc.o CMakeFiles/JNP1_6.dir/movie.cc.o  -o JNP1_6 

@@ -3,4 +3,4 @@ project(JNP1_6)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(JNP1_6 main.cpp lib_playlist.cc lib_playlist.h file.cc file.h playerException.cc playerException.h playable.cc playable.h)
+add_executable(JNP1_6 main.cpp lib_playlist.cc lib_playlist.h file.cc file.h playerException.cc playerException.h playable.h song.cc song.h movie.cc movie.h)

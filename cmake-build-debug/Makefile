@@ -204,32 +204,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-playable.o: playable.cc.o
+movie.o: movie.cc.o
 
-.PHONY : playable.o
+.PHONY : movie.o
 
 # target to build an object file
-playable.cc.o:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playable.cc.o
-.PHONY : playable.cc.o
+movie.cc.o:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/movie.cc.o
+.PHONY : movie.cc.o
 
-playable.i: playable.cc.i
+movie.i: movie.cc.i
 
-.PHONY : playable.i
+.PHONY : movie.i
 
 # target to preprocess a source file
-playable.cc.i:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playable.cc.i
-.PHONY : playable.cc.i
+movie.cc.i:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/movie.cc.i
+.PHONY : movie.cc.i
 
-playable.s: playable.cc.s
+movie.s: movie.cc.s
 
-.PHONY : playable.s
+.PHONY : movie.s
 
 # target to generate assembly for a file
-playable.cc.s:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playable.cc.s
-.PHONY : playable.cc.s
+movie.cc.s:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/movie.cc.s
+.PHONY : movie.cc.s
 
 playerException.o: playerException.cc.o
 
@@ -258,6 +258,33 @@ playerException.cc.s:
 	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playerException.cc.s
 .PHONY : playerException.cc.s
 
+song.o: song.cc.o
+
+.PHONY : song.o
+
+# target to build an object file
+song.cc.o:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/song.cc.o
+.PHONY : song.cc.o
+
+song.i: song.cc.i
+
+.PHONY : song.i
+
+# target to preprocess a source file
+song.cc.i:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/song.cc.i
+.PHONY : song.cc.i
+
+song.s: song.cc.s
+
+.PHONY : song.s
+
+# target to generate assembly for a file
+song.cc.s:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/song.cc.s
+.PHONY : song.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -276,12 +303,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... playable.o"
-	@echo "... playable.i"
-	@echo "... playable.s"
+	@echo "... movie.o"
+	@echo "... movie.i"
+	@echo "... movie.s"
 	@echo "... playerException.o"
 	@echo "... playerException.i"
 	@echo "... playerException.s"
+	@echo "... song.o"
+	@echo "... song.i"
+	@echo "... song.s"
 .PHONY : help
 
 

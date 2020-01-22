@@ -6,7 +6,8 @@
 
 class File {
 public:
-	File(std::string data);
+	File(const std::string data);
+	std::string* getDataField(std::string dataFieldName);
 
 private:
 	std::map<std::string, std::string> metadata;

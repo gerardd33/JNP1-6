@@ -97,7 +97,10 @@
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/main.cpp">
 			<Option target="JNP1_6"/>
 		</Unit>
-		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playable.cc">
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/movie.cc">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/movie.h">
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playable.h">
@@ -107,6 +110,12 @@
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playerException.h">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/song.cc">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/song.h">
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/CMakeLists.txt">
