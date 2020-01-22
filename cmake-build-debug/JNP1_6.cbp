@@ -97,19 +97,55 @@
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/main.cpp">
 			<Option target="JNP1_6"/>
 		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/mode.cc">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/mode.h">
+			<Option target="JNP1_6"/>
+		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/movie.cc">
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/movie.h">
 			<Option target="JNP1_6"/>
 		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/oddEvenMode.cc">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/oddEvenMode.h">
+			<Option target="JNP1_6"/>
+		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playable.h">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/player.cc">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/player.h">
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playerException.cc">
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playerException.h">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playlist.cc">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playlist.h">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/sequenceMode.cc">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/sequenceMode.h">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/shuffleMode.cc">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/shuffleMode.h">
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/song.cc">

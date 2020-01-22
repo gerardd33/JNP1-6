@@ -204,6 +204,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mode.o: mode.cc.o
+
+.PHONY : mode.o
+
+# target to build an object file
+mode.cc.o:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/mode.cc.o
+.PHONY : mode.cc.o
+
+mode.i: mode.cc.i
+
+.PHONY : mode.i
+
+# target to preprocess a source file
+mode.cc.i:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/mode.cc.i
+.PHONY : mode.cc.i
+
+mode.s: mode.cc.s
+
+.PHONY : mode.s
+
+# target to generate assembly for a file
+mode.cc.s:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/mode.cc.s
+.PHONY : mode.cc.s
+
 movie.o: movie.cc.o
 
 .PHONY : movie.o
@@ -231,6 +258,60 @@ movie.cc.s:
 	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/movie.cc.s
 .PHONY : movie.cc.s
 
+oddEvenMode.o: oddEvenMode.cc.o
+
+.PHONY : oddEvenMode.o
+
+# target to build an object file
+oddEvenMode.cc.o:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/oddEvenMode.cc.o
+.PHONY : oddEvenMode.cc.o
+
+oddEvenMode.i: oddEvenMode.cc.i
+
+.PHONY : oddEvenMode.i
+
+# target to preprocess a source file
+oddEvenMode.cc.i:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/oddEvenMode.cc.i
+.PHONY : oddEvenMode.cc.i
+
+oddEvenMode.s: oddEvenMode.cc.s
+
+.PHONY : oddEvenMode.s
+
+# target to generate assembly for a file
+oddEvenMode.cc.s:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/oddEvenMode.cc.s
+.PHONY : oddEvenMode.cc.s
+
+player.o: player.cc.o
+
+.PHONY : player.o
+
+# target to build an object file
+player.cc.o:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/player.cc.o
+.PHONY : player.cc.o
+
+player.i: player.cc.i
+
+.PHONY : player.i
+
+# target to preprocess a source file
+player.cc.i:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/player.cc.i
+.PHONY : player.cc.i
+
+player.s: player.cc.s
+
+.PHONY : player.s
+
+# target to generate assembly for a file
+player.cc.s:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/player.cc.s
+.PHONY : player.cc.s
+
 playerException.o: playerException.cc.o
 
 .PHONY : playerException.o
@@ -257,6 +338,87 @@ playerException.s: playerException.cc.s
 playerException.cc.s:
 	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playerException.cc.s
 .PHONY : playerException.cc.s
+
+playlist.o: playlist.cc.o
+
+.PHONY : playlist.o
+
+# target to build an object file
+playlist.cc.o:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playlist.cc.o
+.PHONY : playlist.cc.o
+
+playlist.i: playlist.cc.i
+
+.PHONY : playlist.i
+
+# target to preprocess a source file
+playlist.cc.i:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playlist.cc.i
+.PHONY : playlist.cc.i
+
+playlist.s: playlist.cc.s
+
+.PHONY : playlist.s
+
+# target to generate assembly for a file
+playlist.cc.s:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playlist.cc.s
+.PHONY : playlist.cc.s
+
+sequenceMode.o: sequenceMode.cc.o
+
+.PHONY : sequenceMode.o
+
+# target to build an object file
+sequenceMode.cc.o:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/sequenceMode.cc.o
+.PHONY : sequenceMode.cc.o
+
+sequenceMode.i: sequenceMode.cc.i
+
+.PHONY : sequenceMode.i
+
+# target to preprocess a source file
+sequenceMode.cc.i:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/sequenceMode.cc.i
+.PHONY : sequenceMode.cc.i
+
+sequenceMode.s: sequenceMode.cc.s
+
+.PHONY : sequenceMode.s
+
+# target to generate assembly for a file
+sequenceMode.cc.s:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/sequenceMode.cc.s
+.PHONY : sequenceMode.cc.s
+
+shuffleMode.o: shuffleMode.cc.o
+
+.PHONY : shuffleMode.o
+
+# target to build an object file
+shuffleMode.cc.o:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/shuffleMode.cc.o
+.PHONY : shuffleMode.cc.o
+
+shuffleMode.i: shuffleMode.cc.i
+
+.PHONY : shuffleMode.i
+
+# target to preprocess a source file
+shuffleMode.cc.i:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/shuffleMode.cc.i
+.PHONY : shuffleMode.cc.i
+
+shuffleMode.s: shuffleMode.cc.s
+
+.PHONY : shuffleMode.s
+
+# target to generate assembly for a file
+shuffleMode.cc.s:
+	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/shuffleMode.cc.s
+.PHONY : shuffleMode.cc.s
 
 song.o: song.cc.o
 
@@ -303,12 +465,30 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mode.o"
+	@echo "... mode.i"
+	@echo "... mode.s"
 	@echo "... movie.o"
 	@echo "... movie.i"
 	@echo "... movie.s"
+	@echo "... oddEvenMode.o"
+	@echo "... oddEvenMode.i"
+	@echo "... oddEvenMode.s"
+	@echo "... player.o"
+	@echo "... player.i"
+	@echo "... player.s"
 	@echo "... playerException.o"
 	@echo "... playerException.i"
 	@echo "... playerException.s"
+	@echo "... playlist.o"
+	@echo "... playlist.i"
+	@echo "... playlist.s"
+	@echo "... sequenceMode.o"
+	@echo "... sequenceMode.i"
+	@echo "... sequenceMode.s"
+	@echo "... shuffleMode.o"
+	@echo "... shuffleMode.i"
+	@echo "... shuffleMode.s"
 	@echo "... song.o"
 	@echo "... song.i"
 	@echo "... song.s"

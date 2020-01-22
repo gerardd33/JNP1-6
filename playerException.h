@@ -3,7 +3,7 @@
 
 #include <string>
 
-class PlayerException {
+class PlayerException :  {
 public:
 	std::string what();
 };

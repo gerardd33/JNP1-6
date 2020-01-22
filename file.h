@@ -10,7 +10,7 @@ const std::string CONTENT_FIELD_NAME = "|content";
 
 class File {
 public:
-	File(const std::string& data);
+	explicit File(const std::string& data);
 	std::string* getDataField(std::string dataFieldName);
 
 private:
