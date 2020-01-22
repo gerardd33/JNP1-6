@@ -70,22 +70,9 @@ CMakeFiles/JNP1_6.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JNP1_6.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/main.cpp -o CMakeFiles/JNP1_6.dir/main.cpp.s
 
-CMakeFiles/JNP1_6.dir/lib_playlist.cc.o: CMakeFiles/JNP1_6.dir/flags.make
-CMakeFiles/JNP1_6.dir/lib_playlist.cc.o: ../lib_playlist.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/JNP1_6.dir/lib_playlist.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/lib_playlist.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/lib_playlist.cc
-
-CMakeFiles/JNP1_6.dir/lib_playlist.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JNP1_6.dir/lib_playlist.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/lib_playlist.cc > CMakeFiles/JNP1_6.dir/lib_playlist.cc.i
-
-CMakeFiles/JNP1_6.dir/lib_playlist.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JNP1_6.dir/lib_playlist.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/lib_playlist.cc -o CMakeFiles/JNP1_6.dir/lib_playlist.cc.s
-
 CMakeFiles/JNP1_6.dir/file.cc.o: CMakeFiles/JNP1_6.dir/flags.make
 CMakeFiles/JNP1_6.dir/file.cc.o: ../file.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/JNP1_6.dir/file.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/JNP1_6.dir/file.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/file.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/file.cc
 
 CMakeFiles/JNP1_6.dir/file.cc.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/JNP1_6.dir/file.cc.s: cmake_force
 
 CMakeFiles/JNP1_6.dir/playerException.cc.o: CMakeFiles/JNP1_6.dir/flags.make
 CMakeFiles/JNP1_6.dir/playerException.cc.o: ../playerException.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/JNP1_6.dir/playerException.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/JNP1_6.dir/playerException.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/playerException.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playerException.cc
 
 CMakeFiles/JNP1_6.dir/playerException.cc.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/JNP1_6.dir/playerException.cc.s: cmake_force
 
 CMakeFiles/JNP1_6.dir/song.cc.o: CMakeFiles/JNP1_6.dir/flags.make
 CMakeFiles/JNP1_6.dir/song.cc.o: ../song.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/JNP1_6.dir/song.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/JNP1_6.dir/song.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/song.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/song.cc
 
 CMakeFiles/JNP1_6.dir/song.cc.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/JNP1_6.dir/song.cc.s: cmake_force
 
 CMakeFiles/JNP1_6.dir/movie.cc.o: CMakeFiles/JNP1_6.dir/flags.make
 CMakeFiles/JNP1_6.dir/movie.cc.o: ../movie.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/JNP1_6.dir/movie.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/JNP1_6.dir/movie.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/movie.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/movie.cc
 
 CMakeFiles/JNP1_6.dir/movie.cc.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/JNP1_6.dir/movie.cc.s: cmake_force
 
 CMakeFiles/JNP1_6.dir/mode.cc.o: CMakeFiles/JNP1_6.dir/flags.make
 CMakeFiles/JNP1_6.dir/mode.cc.o: ../mode.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/JNP1_6.dir/mode.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/JNP1_6.dir/mode.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/mode.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/mode.cc
 
 CMakeFiles/JNP1_6.dir/mode.cc.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/JNP1_6.dir/mode.cc.s: cmake_force
 
 CMakeFiles/JNP1_6.dir/sequenceMode.cc.o: CMakeFiles/JNP1_6.dir/flags.make
 CMakeFiles/JNP1_6.dir/sequenceMode.cc.o: ../sequenceMode.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/JNP1_6.dir/sequenceMode.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/JNP1_6.dir/sequenceMode.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/sequenceMode.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/sequenceMode.cc
 
 CMakeFiles/JNP1_6.dir/sequenceMode.cc.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/JNP1_6.dir/sequenceMode.cc.s: cmake_force
 
 CMakeFiles/JNP1_6.dir/shuffleMode.cc.o: CMakeFiles/JNP1_6.dir/flags.make
 CMakeFiles/JNP1_6.dir/shuffleMode.cc.o: ../shuffleMode.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/JNP1_6.dir/shuffleMode.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/JNP1_6.dir/shuffleMode.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/shuffleMode.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/shuffleMode.cc
 
 CMakeFiles/JNP1_6.dir/shuffleMode.cc.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/JNP1_6.dir/shuffleMode.cc.s: cmake_force
 
 CMakeFiles/JNP1_6.dir/oddEvenMode.cc.o: CMakeFiles/JNP1_6.dir/flags.make
 CMakeFiles/JNP1_6.dir/oddEvenMode.cc.o: ../oddEvenMode.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/JNP1_6.dir/oddEvenMode.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/JNP1_6.dir/oddEvenMode.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/oddEvenMode.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/oddEvenMode.cc
 
 CMakeFiles/JNP1_6.dir/oddEvenMode.cc.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/JNP1_6.dir/oddEvenMode.cc.s: cmake_force
 
 CMakeFiles/JNP1_6.dir/playlist.cc.o: CMakeFiles/JNP1_6.dir/flags.make
 CMakeFiles/JNP1_6.dir/playlist.cc.o: ../playlist.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/JNP1_6.dir/playlist.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/JNP1_6.dir/playlist.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/playlist.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playlist.cc
 
 CMakeFiles/JNP1_6.dir/playlist.cc.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/JNP1_6.dir/playlist.cc.s: cmake_force
 
 CMakeFiles/JNP1_6.dir/player.cc.o: CMakeFiles/JNP1_6.dir/flags.make
 CMakeFiles/JNP1_6.dir/player.cc.o: ../player.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/JNP1_6.dir/player.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/JNP1_6.dir/player.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JNP1_6.dir/player.cc.o -c /home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/player.cc
 
 CMakeFiles/JNP1_6.dir/player.cc.i: cmake_force
@@ -216,7 +203,6 @@ CMakeFiles/JNP1_6.dir/player.cc.s: cmake_force
 # Object files for target JNP1_6
 JNP1_6_OBJECTS = \
 "CMakeFiles/JNP1_6.dir/main.cpp.o" \
-"CMakeFiles/JNP1_6.dir/lib_playlist.cc.o" \
 "CMakeFiles/JNP1_6.dir/file.cc.o" \
 "CMakeFiles/JNP1_6.dir/playerException.cc.o" \
 "CMakeFiles/JNP1_6.dir/song.cc.o" \
@@ -232,7 +218,6 @@ JNP1_6_OBJECTS = \
 JNP1_6_EXTERNAL_OBJECTS =
 
 JNP1_6: CMakeFiles/JNP1_6.dir/main.cpp.o
-JNP1_6: CMakeFiles/JNP1_6.dir/lib_playlist.cc.o
 JNP1_6: CMakeFiles/JNP1_6.dir/file.cc.o
 JNP1_6: CMakeFiles/JNP1_6.dir/playerException.cc.o
 JNP1_6: CMakeFiles/JNP1_6.dir/song.cc.o
@@ -245,7 +230,7 @@ JNP1_6: CMakeFiles/JNP1_6.dir/playlist.cc.o
 JNP1_6: CMakeFiles/JNP1_6.dir/player.cc.o
 JNP1_6: CMakeFiles/JNP1_6.dir/build.make
 JNP1_6: CMakeFiles/JNP1_6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable JNP1_6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable JNP1_6"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/JNP1_6.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -8,11 +8,4 @@
 #include "oddEvenMode.h"
 
 
-// TODO: gdzie te funkcje???
-SequenceMode *createSequenceMode();
-
-ShuffleMode *createShuffleMode(int seed);
-
-OddEvenMode *createOddEvenMode();
-
 #endif //JNP1_6_LIB_PLAYLIST_H

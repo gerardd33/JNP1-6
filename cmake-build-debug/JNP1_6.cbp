@@ -88,9 +88,6 @@
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/file.h">
 			<Option target="JNP1_6"/>
 		</Unit>
-		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/lib_playlist.cc">
-			<Option target="JNP1_6"/>
-		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/lib_playlist.h">
 			<Option target="JNP1_6"/>
 		</Unit>

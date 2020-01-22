@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/file.cc" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/file.cc.o"
-  "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/lib_playlist.cc" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/lib_playlist.cc.o"
   "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/main.cpp" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/main.cpp.o"
   "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/mode.cc" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/mode.cc.o"
   "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/movie.cc" "/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cmake-build-debug/CMakeFiles/JNP1_6.dir/movie.cc.o"

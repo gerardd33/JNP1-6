@@ -150,33 +150,6 @@ file.cc.s:
 	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/file.cc.s
 .PHONY : file.cc.s
 
-lib_playlist.o: lib_playlist.cc.o
-
-.PHONY : lib_playlist.o
-
-# target to build an object file
-lib_playlist.cc.o:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/lib_playlist.cc.o
-.PHONY : lib_playlist.cc.o
-
-lib_playlist.i: lib_playlist.cc.i
-
-.PHONY : lib_playlist.i
-
-# target to preprocess a source file
-lib_playlist.cc.i:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/lib_playlist.cc.i
-.PHONY : lib_playlist.cc.i
-
-lib_playlist.s: lib_playlist.cc.s
-
-.PHONY : lib_playlist.s
-
-# target to generate assembly for a file
-lib_playlist.cc.s:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/lib_playlist.cc.s
-.PHONY : lib_playlist.cc.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -459,9 +432,6 @@ help:
 	@echo "... file.o"
 	@echo "... file.i"
 	@echo "... file.s"
-	@echo "... lib_playlist.o"
-	@echo "... lib_playlist.i"
-	@echo "... lib_playlist.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
