@@ -6,11 +6,16 @@
 #include "sequenceMode.h"
 #include "shuffleMode.h"
 #include "oddEvenMode.h"
+#include "song.h"
+#include "movie.h"
 
 
 class Player {
 public:
 	Playable *openFile(const File&);
+	// TODO: czy te open powinny byc tutaj, czy w ich klasach, czy gdzie???
+	Movie* openMovie(const File& file);
+	Song* openSong(const File& file);
 
 	Playlist *createPlaylist(std::string name);
 };
