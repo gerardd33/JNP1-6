@@ -6,7 +6,7 @@
 
 class OddEvenMode : public Mode {
 public:
-    std::vector<unsigned int> getOrder() override;
+    std::vector<unsigned int> getOrder(std::vector<Playable *> list) override;
 };
 
 #endif //ODDEVENMODE_H
