@@ -14,8 +14,8 @@
 
 class Playlist : public Playable {
 private:
-	std::vector<Playable *> list;
-	Mode* mode;
+    std::vector<Playable *> list;
+    Mode *mode;
 public:
     void add(Playable *playable);
 
@@ -30,12 +30,15 @@ public:
 
 class Player {
 public:
-	Playable* openFile(const File&);
-	Playlist* createPlaylist(std::string name);
+    Playable *openFile(const File &);
+
+    Playlist *createPlaylist(std::string name);
 };
 
-SequenceMode* createSequenceMode();
-ShuffleMode* createShuffleMode(int seed);
-OddEvenMode* createOddEvenMode();
+SequenceMode *createSequenceMode();
+
+ShuffleMode *createShuffleMode(int seed);
+
+OddEvenMode *createOddEvenMode();
 
 #endif //JNP1_6_LIB_PLAYLIST_H
