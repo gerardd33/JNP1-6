@@ -5,13 +5,10 @@
 
 class SequenceMode : public Mode {
 public:
-    std::vector<unsigned int> getOrder(std::vector<Playable *> list) override;
-
-    ~SequenceMode() override = default;
+    std::vector<unsigned int> getOrder(std::vector<std::shared_ptr<Playable>> list) override;
 
     SequenceMode() = default;
 
-    SequenceMode *cloneDynamically() override;
 };
 
 #endif //JNP1_6_SEQUENCEMODE_H
