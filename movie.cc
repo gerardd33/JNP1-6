@@ -21,6 +21,9 @@ Movie::Movie(const File& file) {
 		throw CorruptContentException();
 	content = *tmp;
 	std::transform(content.begin(), content.end(), content.begin(), decode);
+
+	if (!validateData())
+		throw CorruptContentException();
 }
 
 int Movie::decode(int x) {
@@ -39,3 +42,14 @@ int Movie::decode(int x) {
 	x += base;
 	return x;
 }
+
+bool Movie::validateData() {
+	for (int cur : content) {
+		if (!isspace(cur) && !isalnum(cur) && std::find(std::begin(movieAllowedSymbols),
+																										std::end(movieAllowedSymbols),  cur) == std::end(movieAllowedSymbols))
+			return false;
+	}
+
+	return true;
+}
+

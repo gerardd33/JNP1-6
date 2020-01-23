@@ -13,6 +13,7 @@ const std::string MOVIE_YEAR_FIELD_NAME = "year";
 const std::string MOVIE_TITLE_FIELD_NAME = "title";
 const int CODE_SHIFT = 13;
 const int ALPHABET_SIZE = 26;
+const char movieAllowedSymbols[] = { ',', '.', '!', '?', '\'', ':', ';', '-' };
 
 class Movie : public Playable {
 public:
@@ -25,6 +26,7 @@ private:
 	std::string title;
 	std::string content;
 	static int decode(int x);
+	bool validateData();
 };
 
 

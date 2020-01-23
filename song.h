@@ -5,10 +5,12 @@
 #include "file.h"
 #include "corruptContentException.h"
 #include <iostream>
+#include <algorithm>
 #include <memory>
 
 const std::string SONG_ARTIST_FIELD_NAME = "artist";
 const std::string SONG_TITLE_FIELD_NAME = "title";
+const char songAllowedSymbols[] = { ',', '.', '!', '?', '\'', ':', ';', '-' };
 
 class Song : public Playable {
 public:
@@ -20,6 +22,7 @@ private:
 	std::string artist;
 	std::string title;
 	std::string content;
+	bool validateData();
 };
 
 

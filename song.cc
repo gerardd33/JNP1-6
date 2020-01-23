@@ -20,4 +20,17 @@ Song::Song(const File& file) {
 	if (tmp == nullptr)
 		throw CorruptContentException();
 	content = *tmp;
+
+	if (!validateData())
+		throw CorruptContentException();
+}
+
+bool Song::validateData() {
+	for (int cur : content) {
+			if (!isspace(cur) && !isalnum(cur) && std::find(std::begin(songAllowedSymbols),
+						std::end(songAllowedSymbols),  cur) == std::end(songAllowedSymbols))
+				return false;
+	}
+
+	return true;
 }
