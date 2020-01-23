@@ -11,22 +11,19 @@
 
 
 class Player {
-private:
-    std::vector<Playlist *> playlists;
 public:
-    Playable *openFile(const File &);
+    std::shared_ptr<Playable> openFile(const File &);
 
-    ~Player();
-
-    Playlist *createPlaylist(const std::string &name);
+    std::shared_ptr<Playlist> createPlaylist(const std::string &name);
 };
 
 // TODO: gdzie te funkcje???
-SequenceMode *createSequenceMode();
 
-ShuffleMode *createShuffleMode(int seed);
+std::shared_ptr<SequenceMode> createSequenceMode();
 
-OddEvenMode *createOddEvenMode();
+std::shared_ptr<ShuffleMode> createShuffleMode(int seed);
+
+std::shared_ptr<OddEvenMode> createOddEvenMode();
 
 
 #endif //JNP1_6_PLAYER_H
