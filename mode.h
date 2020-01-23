@@ -1,9 +1,10 @@
 #ifndef JNP1_6_MODE_H
 #define JNP1_6_MODE_H
 
+
+#include "playable.h"
 #include <vector>
 #include <memory>
-#include "playable.h"
 
 class Mode {
 public:

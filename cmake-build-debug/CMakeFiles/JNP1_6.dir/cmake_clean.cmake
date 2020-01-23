@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/JNP1_6.dir/file.cc.o"
   "CMakeFiles/JNP1_6.dir/main.cpp.o"
-  "CMakeFiles/JNP1_6.dir/mode.cc.o"
   "CMakeFiles/JNP1_6.dir/movie.cc.o"
   "CMakeFiles/JNP1_6.dir/oddEvenMode.cc.o"
   "CMakeFiles/JNP1_6.dir/player.cc.o"

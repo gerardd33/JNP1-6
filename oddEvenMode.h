@@ -7,9 +7,7 @@
 class OddEvenMode : public Mode {
 public:
     std::vector<unsigned int> getOrder(std::vector<std::shared_ptr<Playable>> list) override;
-
     OddEvenMode() = default;
-
 };
 
 #endif //JNP1_6_ODDEVENMODE_H

@@ -1,11 +1,10 @@
 #include "player.h"
 
-std::shared_ptr<Playlist> Player::createPlaylist(const std::string &name) {
+std::shared_ptr<Playlist> Player::createPlaylist(const std::string& name) {
     return std::make_shared<Playlist>(name);
 }
 
-std::shared_ptr<Playable> Player::openFile(const File &file) {
-    // TODO: jak z tymi pointerami tu, jakis smart, dynamic_cast?
+std::shared_ptr<Playable> Player::openFile(const File& file) {
     std::shared_ptr<Playable> result;
     std::string type = file.getType();
 
@@ -13,8 +12,7 @@ std::shared_ptr<Playable> Player::openFile(const File &file) {
         result = std::make_shared<Song>(file);
     else if (type == "video")
         result = std::make_shared<Movie>(file);
-    else throw PlayerException();
-    // TODO: zmien na unsupported type exception
+    else throw UnsupportedTypeException();
 
     return result;
 }

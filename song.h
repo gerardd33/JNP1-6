@@ -1,9 +1,10 @@
 #ifndef JNP1_6_SONG_H
 #define JNP1_6_SONG_H
 
+
 #include "playable.h"
 #include "file.h"
-#include "playerException.h"
+#include "corruptContentException.h"
 #include <iostream>
 
 const std::string SONG_ARTIST_FIELD_NAME = "artist";

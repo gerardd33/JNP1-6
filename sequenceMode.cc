@@ -1,4 +1,3 @@
-#include <numeric>
 #include "sequenceMode.h"
 
 std::vector<unsigned int> SequenceMode::getOrder(std::vector<std::shared_ptr<Playable>> list) {

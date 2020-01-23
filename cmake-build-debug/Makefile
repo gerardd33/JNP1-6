@@ -177,33 +177,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mode.o: mode.cc.o
-
-.PHONY : mode.o
-
-# target to build an object file
-mode.cc.o:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/mode.cc.o
-.PHONY : mode.cc.o
-
-mode.i: mode.cc.i
-
-.PHONY : mode.i
-
-# target to preprocess a source file
-mode.cc.i:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/mode.cc.i
-.PHONY : mode.cc.i
-
-mode.s: mode.cc.s
-
-.PHONY : mode.s
-
-# target to generate assembly for a file
-mode.cc.s:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/mode.cc.s
-.PHONY : mode.cc.s
-
 movie.o: movie.cc.o
 
 .PHONY : movie.o
@@ -408,9 +381,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mode.o"
-	@echo "... mode.i"
-	@echo "... mode.s"
 	@echo "... movie.o"
 	@echo "... movie.i"
 	@echo "... movie.s"
