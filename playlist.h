@@ -6,7 +6,6 @@
 #include "mode.h"
 #include "outOfBoundsException.h"
 #include "cycleException.h"
-#include "player.h"
 #include <vector>
 #include <memory>
 
@@ -17,8 +16,7 @@ public:
 	void remove();
 	void remove(int position);
 	void setMode(const std::shared_ptr<Mode>& mode);
-	bool containsPlaylist(std::shared_ptr<Playlist> playlist);
-	bool isPlaylist() override { return true; };
+	bool containsObject(std::shared_ptr<Playable> playable) override;
 	void play() override;
 
 	explicit Playlist(const std::string& name);
