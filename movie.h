@@ -14,6 +14,7 @@ const int CODE_SHIFT = 13;
 
 class Movie : public Playable {
 public:
+	bool isPlaylist() override { return false; };
 	void play() override;
 	explicit Movie(const File& file);
 
