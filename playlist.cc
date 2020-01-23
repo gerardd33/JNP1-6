@@ -1,62 +1,52 @@
 #include "playlist.h"
-#include "outOfBoundsException.h"
-#include "cycleException.h"
-#include "player.h"
-
 
 void Playlist::add(std::shared_ptr<Playable> playable) {
     if (playable->isPlaylist()) {
         std::shared_ptr<Playlist> playlist = std::dynamic_pointer_cast<Playlist>(playable);
-        if (playlist->containsPlaylist(shared_from_this())) {
+        if (playlist->containsPlaylist(shared_from_this()))
             throw CycleException();
-        }
     }
-    (this->list).push_back(playable);
+    songList.push_back(playable);
 }
 
 void Playlist::add(std::shared_ptr<Playable> playable, int position) {
     if (playable->isPlaylist()) {
         std::shared_ptr<Playlist> playlist = std::dynamic_pointer_cast<Playlist>(playable);
-        if (playlist->containsPlaylist(shared_from_this())) {
+        if (playlist->containsPlaylist(shared_from_this()))
             throw CycleException();
-        }
     }
-    if (position > (this->list).size()) {
+    if (position > songList.size())
         throw OutOfBoundsException();
-    }
-    (this->list).insert((this->list).begin() + position, playable);
+    songList.insert(songList.begin() + position, playable);
 }
 
 void Playlist::remove() {
-    if ((this->list).empty()) {
+    if (songList.empty())
         throw OutOfBoundsException();
-    }
-    (this->list).pop_back();
+    songList.pop_back();
 }
 
 void Playlist::remove(int position) {
-    if (position > (this->list).size()) {
+    if (position > songList.size())
         throw OutOfBoundsException();
-    }
-    (this->list).erase((this->list).begin() + position);
+    songList.erase(songList.begin() + position);
 }
 
-void Playlist::setMode(const std::shared_ptr<Mode> &mode) {
-//    this->mode.reset();
-    this->mode = mode;
+void Playlist::setMode(const std::shared_ptr<Mode>& newMode) {
+    mode = newMode;
 }
 
 void Playlist::play() {
-    std::vector<unsigned int> order = this->mode->getOrder(this->list);
+    std::vector<unsigned int> order = this->mode->getOrder(songList);
     for (unsigned int x : order)
-        this->list[x]->play();
+        songList[x]->play();
 }
 
-//Used to check for cycles
+// Used to check for cycles
 bool Playlist::containsPlaylist(std::shared_ptr<Playlist> playlist) {
     bool result = false;
-    this->list.begin();
-    for (auto it = begin(this->list); it != end(this->list) && !result; ++it) {
+    songList.begin();
+    for (auto it = songList.begin(); it != songList.end() && !result; ++it) {
         if ((*it)->isPlaylist()) {
             if (*it == playlist) {
                 result = true;
@@ -69,9 +59,8 @@ bool Playlist::containsPlaylist(std::shared_ptr<Playlist> playlist) {
     return result;
 }
 
-Playlist::Playlist(const std::string &name) {
-    this->name = name;
-    this->list = std::vector<std::shared_ptr<Playable>>();
-    this->mode = createSequenceMode();
+Playlist::Playlist(const std::string& newName) {
+    name = newName;
+    songList = std::vector<std::shared_ptr<Playable>>();
+    mode = createSequenceMode();
 }
-
