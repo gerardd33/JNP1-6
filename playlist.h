@@ -3,9 +3,12 @@
 
 
 #include "playable.h"
-#include "mode.h"
+#include "sequenceMode.h"
+#include "shuffleMode.h"
+#include "oddEvenMode.h"
 #include "outOfBoundsException.h"
 #include "cycleException.h"
+#include <iostream>
 #include <vector>
 
 class Playlist : public Playable, public std::enable_shared_from_this<Playlist> {

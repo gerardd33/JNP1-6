@@ -1,5 +1,4 @@
 #include "playlist.h"
-#include "player.h"
 
 void Playlist::add(std::shared_ptr<Playable> playable) {
     if (playable->containsObject(shared_from_this())) {
@@ -43,7 +42,7 @@ void Playlist::play() {
 Playlist::Playlist(const std::string& newName) {
     name = newName;
     songList = std::vector<std::shared_ptr<Playable>>();
-    mode = createSequenceMode();
+    mode = std::make_shared<SequenceMode>();
 }
 
 bool Playlist::containsObject(std::shared_ptr<Playable> playable) {
