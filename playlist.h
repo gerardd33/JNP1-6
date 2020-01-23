@@ -22,19 +22,19 @@ public:
 
     void remove(int position);
 
-    void setMode(Mode*& mode);
+    void setMode(Mode *&mode);
 
-    void setMode(Mode*&& mode);
+    void setMode(Mode *&&mode);
 
-    bool containsPlaylist(Playlist* playlist);
+    bool containsPlaylist(Playlist *playlist);
 
-    bool  isPlaylist() override {return true;};
+    bool isPlaylist() override { return true; };
 
     void play() override;
 
-    explicit Playlist(std::string name) : name(std::move(name)), list(std::vector<Playable *>()), mode(nullptr){};
+    explicit Playlist(std::string name) : name(std::move(name)), list(std::vector<Playable *>()), mode(nullptr) {};
 
-    ~Playlist(){
+    ~Playlist() {
         delete this->mode;
     };
 };
