@@ -5,7 +5,7 @@
 
 void Playlist::add(Playable *playable) {
     if (playable->isPlaylist()) {
-        Playlist *playlist = (Playlist *) playable;
+        Playlist *playlist = dynamic_cast<Playlist *> (playable);
         if (playlist->containsPlaylist(this)) {
             throw CycleException();
         }
@@ -15,7 +15,7 @@ void Playlist::add(Playable *playable) {
 
 void Playlist::add(Playable *playable, int position) {
     if (playable->isPlaylist()) {
-        Playlist *playlist = (Playlist *) playable;
+        Playlist *playlist = dynamic_cast<Playlist *> (playable);
         if (playlist->containsPlaylist(this)) {
             throw CycleException();
         }
@@ -65,7 +65,7 @@ bool Playlist::containsPlaylist(Playlist *playlist) {
             if (*it == playlist) {
                 result = true;
             } else {
-                Playlist *p = (Playlist *) (*it);
+                Playlist *p = dynamic_cast<Playlist *> (*it);
                 result = p->containsPlaylist(playlist);
             }
         }
