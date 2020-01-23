@@ -34,7 +34,8 @@ void Playlist::setMode(const std::shared_ptr<Mode>& newMode) {
 }
 
 void Playlist::play() {
-    std::vector<unsigned int> order = this->mode->getOrder(songList);
+		std::cout << "Playlist [" << name << "]\n";
+		std::vector<unsigned int> order = this->mode->getOrder(songList);
     for (unsigned int x : order)
         songList[x]->play();
 }
