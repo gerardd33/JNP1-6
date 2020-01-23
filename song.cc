@@ -21,11 +21,11 @@ Song::Song(const File& file) {
 		throw CorruptContentException();
 	content = *tmp;
 
-	if (!validateData())
+	if (!validateContent())
 		throw CorruptContentException();
 }
 
-bool Song::validateData() {
+bool Song::validateContent() {
 	for (int cur : content) {
 			if (!isspace(cur) && !isalnum(cur) && std::find(std::begin(songAllowedSymbols),
 						std::end(songAllowedSymbols),  cur) == std::end(songAllowedSymbols))

@@ -26,7 +26,7 @@ private:
 	std::string title;
 	std::string content;
 	static int decode(int x);
-	bool validateData();
+	bool validateContent();
 };
 
 

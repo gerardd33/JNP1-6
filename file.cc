@@ -8,8 +8,6 @@ const std::string* File::getDataField(const std::string& dataFieldName) const {
 	else return nullptr;
 }
 
-#include <iostream>
-
 File::File(const std::string& data) {
 	if (find(data.begin(), data.end(), '|') == data.end())
 		throw CorruptFileException();

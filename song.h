@@ -22,7 +22,7 @@ private:
 	std::string artist;
 	std::string title;
 	std::string content;
-	bool validateData();
+	bool validateContent();
 };
 
 

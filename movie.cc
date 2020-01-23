@@ -22,7 +22,7 @@ Movie::Movie(const File& file) {
 	content = *tmp;
 	std::transform(content.begin(), content.end(), content.begin(), decode);
 
-	if (!validateData())
+	if (!validateContent())
 		throw CorruptContentException();
 }
 
@@ -43,7 +43,7 @@ int Movie::decode(int x) {
 	return x;
 }
 
-bool Movie::validateData() {
+bool Movie::validateContent() {
 	for (int cur : content) {
 		if (!isspace(cur) && !isalnum(cur) && std::find(std::begin(movieAllowedSymbols),
 																										std::end(movieAllowedSymbols),  cur) == std::end(movieAllowedSymbols))
