@@ -1,3 +1,5 @@
+#include <utility>
+
 #ifndef JNP1_6_PLAYLIST_H
 #define JNP1_6_PLAYLIST_H
 
@@ -6,9 +8,9 @@
 #include "playerException.h"
 #include <vector>
 
-
 class Playlist : public Playable {
 private:
+    std::string name;
     std::vector<Playable *> list;
     Mode *mode;
 public:
@@ -20,9 +22,21 @@ public:
 
     void remove(int position);
 
-    void setMode(Mode *mode);
+    void setMode(Mode*& mode);
+
+    void setMode(Mode*&& mode);
+
+    bool containsPlaylist(Playlist* playlist);
+
+    bool  isPlaylist() override {return true;};
 
     void play() override;
+
+    explicit Playlist(std::string name) : name(std::move(name)), list(std::vector<Playable *>()), mode(nullptr){};
+
+    ~Playlist(){
+        delete this->mode;
+    };
 };
 
 
