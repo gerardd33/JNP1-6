@@ -8,3 +8,6 @@ std::vector<unsigned int> ShuffleMode::getOrder(std::vector<Playable *> list) {
     return order;
 }
 
+ShuffleMode *ShuffleMode::cloneDynamically() {
+    return new ShuffleMode(this->seed);
+}
