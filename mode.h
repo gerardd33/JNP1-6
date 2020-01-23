@@ -2,15 +2,12 @@
 #define JNP1_6_MODE_H
 
 #include <vector>
+#include <memory>
 #include "playable.h"
 
 class Mode {
 public:
-    virtual std::vector<unsigned int> getOrder(std::vector<Playable *> list) = 0;
-
-    virtual Mode *cloneDynamically() = 0;
-
-    virtual ~Mode() = default;
+    virtual std::vector<unsigned int> getOrder(std::vector<std::shared_ptr<Playable>> list) = 0;
 };
 
 
