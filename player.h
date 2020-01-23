@@ -13,8 +13,8 @@
 
 class Player {
 public:
-    std::shared_ptr<Playable> openFile(const File&);
-    std::shared_ptr<Playlist> createPlaylist(const std::string& name);
+    static std::shared_ptr<Playable> openFile(const File&);
+    static std::shared_ptr<Playlist> createPlaylist(const std::string& name);
 };
 
 std::shared_ptr<SequenceMode> createSequenceMode();
