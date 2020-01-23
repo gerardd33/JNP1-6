@@ -11,9 +11,14 @@
 
 
 class Player {
+private:
+	std::vector<Playlist *>playlists;
 public:
 	Playable *openFile(const File&);
-	Playlist *createPlaylist(std::string name);
+
+	~Player();
+
+	Playlist *createPlaylist(const std::string& name);
 };
 
 // TODO: gdzie te funkcje???
