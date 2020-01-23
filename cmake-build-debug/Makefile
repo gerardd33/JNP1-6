@@ -285,33 +285,6 @@ player.cc.s:
 	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/player.cc.s
 .PHONY : player.cc.s
 
-playerException.o: playerException.cc.o
-
-.PHONY : playerException.o
-
-# target to build an object file
-playerException.cc.o:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playerException.cc.o
-.PHONY : playerException.cc.o
-
-playerException.i: playerException.cc.i
-
-.PHONY : playerException.i
-
-# target to preprocess a source file
-playerException.cc.i:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playerException.cc.i
-.PHONY : playerException.cc.i
-
-playerException.s: playerException.cc.s
-
-.PHONY : playerException.s
-
-# target to generate assembly for a file
-playerException.cc.s:
-	$(MAKE) -f CMakeFiles/JNP1_6.dir/build.make CMakeFiles/JNP1_6.dir/playerException.cc.s
-.PHONY : playerException.cc.s
-
 playlist.o: playlist.cc.o
 
 .PHONY : playlist.o
@@ -447,9 +420,6 @@ help:
 	@echo "... player.o"
 	@echo "... player.i"
 	@echo "... player.s"
-	@echo "... playerException.o"
-	@echo "... playerException.i"
-	@echo "... playerException.s"
 	@echo "... playlist.o"
 	@echo "... playlist.i"
 	@echo "... playlist.s"

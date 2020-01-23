@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/corruptContentException.h">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/corruptFileException.h">
+			<Option target="JNP1_6"/>
+		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cycleException.h">
 			<Option target="JNP1_6"/>
 		</Unit>
@@ -127,9 +133,6 @@
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/player.h">
 			<Option target="JNP1_6"/>
 		</Unit>
-		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playerException.cc">
-			<Option target="JNP1_6"/>
-		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playerException.h">
 			<Option target="JNP1_6"/>
 		</Unit>
@@ -155,6 +158,9 @@
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/song.h">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/unsupportedTypeException.h">
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/CMakeLists.txt">

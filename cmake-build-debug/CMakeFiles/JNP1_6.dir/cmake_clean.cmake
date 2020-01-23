@@ -5,7 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/JNP1_6.dir/movie.cc.o"
   "CMakeFiles/JNP1_6.dir/oddEvenMode.cc.o"
   "CMakeFiles/JNP1_6.dir/player.cc.o"
-  "CMakeFiles/JNP1_6.dir/playerException.cc.o"
   "CMakeFiles/JNP1_6.dir/playlist.cc.o"
   "CMakeFiles/JNP1_6.dir/sequenceMode.cc.o"
   "CMakeFiles/JNP1_6.dir/shuffleMode.cc.o"

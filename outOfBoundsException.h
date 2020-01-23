@@ -5,7 +5,6 @@
 #include "playerException.h"
 
 class OutOfBoundsException : public PlayerException {
-
 public:
     [[nodiscard]] const char* what() const noexcept override {
         return "out of bounds";

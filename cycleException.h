@@ -5,10 +5,9 @@
 #include "playerException.h"
 
 class CycleException : public PlayerException {
-
 public:
     [[nodiscard]] const char* what() const noexcept override {
-        return "cyclical playlists";
+        return "cycle in playlists";
     }
 };
 
