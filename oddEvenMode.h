@@ -12,7 +12,7 @@ public:
 
     OddEvenMode() = default;
 
-    OddEvenMode* cloneDynamically() override;
+    OddEvenMode *cloneDynamically() override;
 };
 
 #endif //JNP1_6_ODDEVENMODE_H
