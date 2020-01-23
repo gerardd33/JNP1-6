@@ -6,13 +6,10 @@
 
 class OddEvenMode : public Mode {
 public:
-    std::vector<unsigned int> getOrder(std::vector<Playable *> list) override;
-
-    ~OddEvenMode() override = default;
+    std::vector<unsigned int> getOrder(std::vector<std::shared_ptr<Playable>> list) override;
 
     OddEvenMode() = default;
 
-    OddEvenMode *cloneDynamically() override;
 };
 
 #endif //JNP1_6_ODDEVENMODE_H
