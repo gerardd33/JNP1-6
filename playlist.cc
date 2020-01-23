@@ -12,6 +12,12 @@ void Playlist::add(Playable *playable) {
 }
 
 void Playlist::add(Playable *playable, int position) {
+    if (playable->isPlaylist()) {
+        Playlist *playlist = (Playlist *) playable;
+        if (playlist->containsPlaylist(this)) {
+            throw PlayerException();
+        }
+    }
     if (position > (this->list).size()) {
         throw PlayerException();
     }
