@@ -26,13 +26,36 @@ void Playlist::remove(int position) {
     (this->list).erase((this->list).begin() + position);
 }
 
-void Playlist::setMode(Mode *newMode) {
-    this->mode = newMode;
+void Playlist::setMode(Mode *&mode) {
+    delete this->mode;
+    this->mode = mode->cloneDynamically();
+}
+
+void Playlist::setMode(Mode *&&mode) {
+    delete this->mode;
+    this->mode = mode;
 }
 
 void Playlist::play() {
     std::vector<unsigned int> order = this->mode->getOrder(this->list);
     for (unsigned int x : order)
         this->list[x]->play();
+}
+
+//Used to check for cycles
+bool Playlist::containsPlaylist(Playlist *playlist) {
+    bool result = false;
+    this->list.begin();
+    for (auto it = begin(this->list); it != end(this->list) && !result; ++it) {
+        if ((*it)->isPlaylist()) {
+            if (*it == playlist) {
+                result = true;
+            } else {
+                Playlist *p = (Playlist *) (*it);
+                result = p->containsPlaylist(playlist);
+            }
+        }
+    }
+    return result;
 }
 
