@@ -16,12 +16,11 @@ public:
 	void remove();
 	void remove(int position);
 	void setMode(const std::shared_ptr<Mode>& mode);
-	bool containsObject(std::shared_ptr<Playable> playable) override;
 	void play() override;
+	bool containsObject(std::shared_ptr<Playable> playable) override;
 
 	explicit Playlist(const std::string& name);
-
-	~Playlist() {
+	~Playlist() override {
 		this->mode.reset();
 	};
 

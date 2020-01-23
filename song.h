@@ -12,8 +12,8 @@ const std::string SONG_TITLE_FIELD_NAME = "title";
 
 class Song : public Playable {
 public:
-	bool containsObject(std::shared_ptr<Playable> playable) override { return (playable.get() == this); };
 	void play() override;
+	bool containsObject(std::shared_ptr<Playable> playable) override { return (playable.get() == this); };
 	explicit Song(const File& file);
 
 private:

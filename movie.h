@@ -19,12 +19,12 @@ public:
 	bool containsObject(std::shared_ptr<Playable> playable) override { return (playable.get() == this); };
 	void play() override;
 	explicit Movie(const File& file);
-	static int decode(int x);
 
 private:
 	std::string year;
 	std::string title;
 	std::string content;
+	static int decode(int x);
 };
 
 

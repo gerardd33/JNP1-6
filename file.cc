@@ -8,7 +8,8 @@ const std::string* File::getDataField(const std::string& dataFieldName) const {
 	else return nullptr;
 }
 
-// TODO: czy tutaj w argumencie na pewno powinno byc const
+#include <iostream>
+
 File::File(const std::string& data) {
 	if (data.empty())
 		return;
@@ -20,9 +21,6 @@ File::File(const std::string& data) {
 	metadata[TYPE_FIELD_NAME] = fieldName;
 
 	while (getline(iss, fieldName, ':')) {
-		// TODO: czy tutaj sie nie wywala przy pustej
-		//  koncowce lub innych cornerach, wyifuj
-
 		std::getline(iss, fieldValue, '|');
 		metadata[fieldName] = fieldValue;
 	}
@@ -32,11 +30,4 @@ File::File(const std::string& data) {
 
 std::string File::getType() const {
 	return metadata.at(TYPE_FIELD_NAME);
-}
-
-// TODO: usun
-void File::write() {
-	for (auto it : metadata) {
-		std::cout<<"key: "<<it.first<<"\nvalue: "<<it.second<<"\n\n";
-	}
 }
