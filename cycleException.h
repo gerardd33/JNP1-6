@@ -8,7 +8,7 @@ class CycleException : public PlayerException {
 
 public:
     [[nodiscard]] const char* what() const noexcept override {
-        return "Cannot add to playlist because this would result in a cycle.";
+        return "cyclical playlists";
     }
 };
 

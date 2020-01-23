@@ -8,7 +8,7 @@ class OutOfBoundsException : public PlayerException {
 
 public:
     [[nodiscard]] const char* what() const noexcept override {
-        return "Cannot add or remove at given position, because it is out of bounds.";
+        return "out of bounds";
     }
 };
 

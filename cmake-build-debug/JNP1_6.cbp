@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/cycleException.h">
+			<Option target="JNP1_6"/>
+		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/file.cc">
 			<Option target="JNP1_6"/>
 		</Unit>
@@ -110,6 +113,9 @@
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/oddEvenMode.h">
+			<Option target="JNP1_6"/>
+		</Unit>
+		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/outOfBoundsException.h">
 			<Option target="JNP1_6"/>
 		</Unit>
 		<Unit filename="/home/gerardd/Files/Informatyka/CLionProjects/JNP1-6/playable.h">

@@ -5,8 +5,8 @@
 
 class PlayerException : public std::exception {
 public:
-    [[nodiscard]] const char* what() const noexcept override {
-        return "Player error.";
+    [[nodiscard]] virtual const char* what() const noexcept {
+        return "player error";
     }
 };
 
