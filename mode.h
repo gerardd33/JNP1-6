@@ -9,6 +9,7 @@
 class Mode {
 public:
     virtual std::vector<unsigned int> getOrder(std::vector<std::shared_ptr<Playable>> list) = 0;
+    virtual ~Mode() = default;
 };
 
 
