@@ -11,7 +11,7 @@ const std::string CONTENT_FIELD_NAME = "|content";
 class File {
 public:
 	explicit File(const std::string& data);
-	std::string* getDataField(const std::string& dataFieldName);
+	[[nodiscard]] const std::string* getDataField(const std::string& dataFieldName) const;
 	[[nodiscard]] std::string getType() const;
 
 private:

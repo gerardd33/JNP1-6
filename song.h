@@ -2,15 +2,18 @@
 #define JNP1_6_SONG_H
 
 #include "playable.h"
+#include "file.h"
+#include "playerException.h"
 #include <iostream>
+
+const std::string ARTIST_FIELD_NAME = "artist";
+const std::string TITLE_FIELD_NAME = "title";
+
 
 class Song : public Playable {
 public:
 	void play() override;
-	Song(std::string artist, std::string title,
-			 std::string content) : artist(std::move(artist)),
-			 												title(std::move(title)),
-			 												content(std::move(content)) {}
+	explicit Song(const File& file);
 
 private:
 	std::string artist;

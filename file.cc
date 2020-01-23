@@ -2,7 +2,7 @@
 #include "file.h"
 
 
-std::string* File::getDataField(const std::string& dataFieldName) {
+const std::string* File::getDataField(const std::string& dataFieldName) const {
 	auto it = metadata.find(dataFieldName);
 	if (it != metadata.end())
 		return &(it->second);

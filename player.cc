@@ -11,10 +11,10 @@ Playable* Player::openFile(const File& file) {
 	std::string type = file.getType();
 
 	if (type == "audio")
-		// TODO: ...
-					else if (type == "video")
-		// TODO: ...
-					else throw PlayerException();
+		result = new Song(file);
+	else if (type == "video")
+		result = new Movie(file);
+	else throw PlayerException();
 	// TODO: zmien na unsupported type exception
 
 	return result;
