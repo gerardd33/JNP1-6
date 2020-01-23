@@ -12,6 +12,7 @@ const std::string TITLE_FIELD_NAME = "title";
 
 class Song : public Playable {
 public:
+	bool isPlaylist() override { return false; };
 	void play() override;
 	explicit Song(const File& file);
 
