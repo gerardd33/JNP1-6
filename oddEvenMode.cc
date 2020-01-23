@@ -9,3 +9,7 @@ std::vector<unsigned int> OddEvenMode::getOrder(std::vector<Playable *> list) {
 
     return order;
 }
+
+OddEvenMode *OddEvenMode::cloneDynamically() {
+    return new OddEvenMode();
+}
