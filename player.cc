@@ -12,9 +12,9 @@ Playable* Player::openFile(const File& file) {
 
 	if (type == "audio")
 		// TODO: ...
-	else if (type == "video")
+					else if (type == "video")
 		// TODO: ...
-	else throw PlayerException();
+					else throw PlayerException();
 	// TODO: zmien na unsupported type exception
 
 	return result;
