@@ -11,7 +11,7 @@ public:
 
     SequenceMode() = default;
 
-    SequenceMode* cloneDynamically() override;
+    SequenceMode *cloneDynamically() override;
 };
 
 #endif //JNP1_6_SEQUENCEMODE_H
