@@ -10,4 +10,5 @@ public:
     OddEvenMode() = default;
 };
 
+
 #endif //JNP1_6_ODDEVENMODE_H

@@ -12,4 +12,5 @@ public:
     SequenceMode() = default;
 };
 
+
 #endif //JNP1_6_SEQUENCEMODE_H

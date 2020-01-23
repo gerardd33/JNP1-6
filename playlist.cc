@@ -1,5 +1,6 @@
 #include "playlist.h"
 
+
 void Playlist::add(const std::shared_ptr<Playable>& playable) {
     if (playable->containsObject(shared_from_this()))
         throw CycleException();
