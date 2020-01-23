@@ -1,7 +1,7 @@
 #include "song.h"
 
 void Song::play() {
-	std::cout << "Song [" << artist << ", " << title << "]: " << content;
+	std::cout << "Song [" << artist << ", " << title << "]: " << content << "\n";
 }
 
 Song::Song(const File& file) {

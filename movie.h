@@ -12,12 +12,14 @@
 const std::string MOVIE_YEAR_FIELD_NAME = "year";
 const std::string MOVIE_TITLE_FIELD_NAME = "title";
 const int CODE_SHIFT = 13;
+const int ALPHABET_SIZE = 26;
 
 class Movie : public Playable {
 public:
 	bool containsObject(std::shared_ptr<Playable> playable) override { return (playable.get() == this); };
 	void play() override;
 	explicit Movie(const File& file);
+	static int decode(int x);
 
 private:
 	std::string year;
