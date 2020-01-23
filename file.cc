@@ -11,8 +11,8 @@ const std::string* File::getDataField(const std::string& dataFieldName) const {
 #include <iostream>
 
 File::File(const std::string& data) {
-	if (data.empty())
-		return;
+	if (find(data.begin(), data.end(), '|') == data.end())
+		throw CorruptFileException();
 
 	std::string fieldName, fieldValue;
 	std::istringstream iss(data);
