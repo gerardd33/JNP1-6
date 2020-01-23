@@ -8,6 +8,7 @@ class Playable {
 public:
 	virtual void play() = 0;
 	virtual bool containsObject(std::shared_ptr<Playable> playable) = 0;
+	virtual ~Playable() = default;
 };
 
 
