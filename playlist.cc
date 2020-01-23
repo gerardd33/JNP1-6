@@ -2,6 +2,12 @@
 
 
 void Playlist::add(Playable *playable) {
+    if (playable->isPlaylist()) {
+        Playlist *playlist = (Playlist *) playable;
+        if (playlist->containsPlaylist(this)) {
+            throw PlayerException();
+        }
+    }
     (this->list).push_back(playable);
 }
 
