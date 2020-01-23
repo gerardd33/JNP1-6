@@ -6,8 +6,8 @@
 #include "playerException.h"
 #include <iostream>
 
-const std::string ARTIST_FIELD_NAME = "artist";
-const std::string TITLE_FIELD_NAME = "title";
+const std::string SONG_ARTIST_FIELD_NAME = "artist";
+const std::string SONG_TITLE_FIELD_NAME = "title";
 
 
 class Song : public Playable {

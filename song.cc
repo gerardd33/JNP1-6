@@ -6,13 +6,13 @@ void Song::play() {
 
 Song::Song(const File &file) {
 	const std::string* tmp;
-	tmp = file.getDataField(ARTIST_FIELD_NAME);
+	tmp = file.getDataField(SONG_ARTIST_FIELD_NAME);
 	if (tmp == nullptr)
 		throw PlayerException(); // TODO: corrupt content exception
 	artist = *tmp;
 	// TODO: czy tu na pewno sie kopiuje ??? powinno
 
-	tmp = file.getDataField(TITLE_FIELD_NAME);
+	tmp = file.getDataField(SONG_TITLE_FIELD_NAME);
 	if (tmp == nullptr)
 		throw PlayerException(); // TODO: corrupt content exception
 	title = *tmp;

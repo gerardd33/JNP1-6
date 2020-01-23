@@ -1,4 +1,3 @@
-#include <sstream>
 #include "file.h"
 
 
@@ -33,4 +32,11 @@ File::File(const std::string& data) {
 
 std::string File::getType() const {
 	return metadata.at(TYPE_FIELD_NAME);
+}
+
+// TODO: usun
+void File::write() {
+	for (auto it : metadata) {
+		std::cout<<"key: "<<it.first<<"\nvalue: "<<it.second<<"\n\n";
+	}
 }

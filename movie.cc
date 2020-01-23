@@ -6,13 +6,13 @@ void Movie::play() {
 
 Movie::Movie(const File &file) {
 	const std::string* tmp;
-	tmp = file.getDataField();
+	tmp = file.getDataField(MOVIE_YEAR_FIELD_NAME);
 	if (tmp == nullptr)
 		throw PlayerException(); // TODO: corrupt content exception
 	year = *tmp;
 	// TODO: czy tu na pewno sie kopiuje ??? powinno
 
-	tmp = file.getDataField(TITLE_FIELD_NAME);
+	tmp = file.getDataField(MOVIE_TITLE_FIELD_NAME);
 	if (tmp == nullptr)
 		throw PlayerException(); // TODO: corrupt content exception
 	title = *tmp;

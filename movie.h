@@ -7,8 +7,8 @@
 #include <iostream>
 #include <algorithm>
 
-const std::string YEAR_FIELD_NAME = "year";
-const std::string TITLE_FIELD_NAME = "title";
+const std::string MOVIE_YEAR_FIELD_NAME = "year";
+const std::string MOVIE_TITLE_FIELD_NAME = "title";
 const int CODE_SHIFT = 13;
 
 
