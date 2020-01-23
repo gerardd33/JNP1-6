@@ -1,22 +1,23 @@
 #include "playlist.h"
 #include "outOfBoundsException.h"
 #include "cycleException.h"
+#include "player.h"
 
 
-void Playlist::add(Playable *playable) {
+void Playlist::add(std::shared_ptr<Playable> playable) {
     if (playable->isPlaylist()) {
-        Playlist *playlist = dynamic_cast<Playlist *> (playable);
-        if (playlist->containsPlaylist(this)) {
+        std::shared_ptr<Playlist> playlist = std::dynamic_pointer_cast<Playlist>(playable);
+        if (playlist->containsPlaylist(shared_from_this())) {
             throw CycleException();
         }
     }
     (this->list).push_back(playable);
 }
 
-void Playlist::add(Playable *playable, int position) {
+void Playlist::add(std::shared_ptr<Playable> playable, int position) {
     if (playable->isPlaylist()) {
-        Playlist *playlist = dynamic_cast<Playlist *> (playable);
-        if (playlist->containsPlaylist(this)) {
+        std::shared_ptr<Playlist> playlist = std::dynamic_pointer_cast<Playlist>(playable);
+        if (playlist->containsPlaylist(shared_from_this())) {
             throw CycleException();
         }
     }
@@ -40,13 +41,8 @@ void Playlist::remove(int position) {
     (this->list).erase((this->list).begin() + position);
 }
 
-void Playlist::setMode(Mode *&mode) {
-    delete this->mode;
-    this->mode = mode->cloneDynamically();
-}
-
-void Playlist::setMode(Mode *&&mode) {
-    delete this->mode;
+void Playlist::setMode(const std::shared_ptr<Mode> &mode) {
+//    this->mode.reset();
     this->mode = mode;
 }
 
@@ -57,7 +53,7 @@ void Playlist::play() {
 }
 
 //Used to check for cycles
-bool Playlist::containsPlaylist(Playlist *playlist) {
+bool Playlist::containsPlaylist(std::shared_ptr<Playlist> playlist) {
     bool result = false;
     this->list.begin();
     for (auto it = begin(this->list); it != end(this->list) && !result; ++it) {
@@ -65,11 +61,17 @@ bool Playlist::containsPlaylist(Playlist *playlist) {
             if (*it == playlist) {
                 result = true;
             } else {
-                Playlist *p = dynamic_cast<Playlist *> (*it);
+                std::shared_ptr<Playlist> p = std::dynamic_pointer_cast<Playlist>(*it);
                 result = p->containsPlaylist(playlist);
             }
         }
     }
     return result;
+}
+
+Playlist::Playlist(const std::string &name) {
+    this->name = name;
+    this->list = std::vector<std::shared_ptr<Playable>>();
+    this->mode = createSequenceMode();
 }
 
