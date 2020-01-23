@@ -6,3 +6,7 @@ std::vector<unsigned int> SequenceMode::getOrder(std::vector<Playable *> list) {
     std::iota(std::begin(order), std::end(order), 0); // order is {0, 1, 2, ... list.size() - 1}
     return order;
 }
+
+SequenceMode *SequenceMode::cloneDynamically() {
+    return new SequenceMode();
+}
