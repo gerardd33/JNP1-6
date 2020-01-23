@@ -1,42 +1,32 @@
 #include "player.h"
 
-Playlist *Player::createPlaylist(const std::string &name) {
-    Playlist *playlist = new Playlist(name);
-    auto mode = createSequenceMode();
-    playlist->setMode(mode);
-    playlists.push_back(playlist);
-    return playlist;
+std::shared_ptr<Playlist> Player::createPlaylist(const std::string &name) {
+    return std::make_shared<Playlist>(name);
 }
 
-Playable *Player::openFile(const File &file) {
+std::shared_ptr<Playable> Player::openFile(const File &file) {
     // TODO: jak z tymi pointerami tu, jakis smart, dynamic_cast?
-    Playable *result;
+    std::shared_ptr<Playable> result;
     std::string type = file.getType();
 
     if (type == "audio")
-        result = new Song(file);
+        result = std::make_shared<Song>(file);
     else if (type == "video")
-        result = new Movie(file);
+        result = std::make_shared<Movie>(file);
     else throw PlayerException();
     // TODO: zmien na unsupported type exception
 
     return result;
 }
 
-Player::~Player() {
-    for (auto it = begin(this->playlists); it != end(this->playlists); ++it) {
-        delete (*it);
-    }
+std::shared_ptr<SequenceMode> createSequenceMode() {
+    return std::make_shared<SequenceMode>();
 }
 
-SequenceMode *createSequenceMode() {
-    return new SequenceMode();
+std::shared_ptr<ShuffleMode> createShuffleMode(int seed) {
+    return std::make_shared<ShuffleMode>(seed);
 }
 
-ShuffleMode *createShuffleMode(int seed) {
-    return new ShuffleMode(seed);
-}
-
-OddEvenMode *createOddEvenMode() {
-    return new OddEvenMode();
+std::shared_ptr<OddEvenMode> createOddEvenMode() {
+    return std::make_shared<OddEvenMode>();
 }
