@@ -15,7 +15,7 @@ const char songAllowedSymbols[] = { ',', '.', '!', '?', '\'', ':', ';', '-' };
 class Song : public Playable {
 public:
 	void play() override;
-	bool containsObject(std::shared_ptr<Playable> playable) override { return (playable.get() == this); };
+	bool containsObject(const std::shared_ptr<Playable>& playable) override { return (playable.get() == this); };
 	explicit Song(const File& file);
 
 private:

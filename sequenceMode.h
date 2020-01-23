@@ -8,7 +8,7 @@
 
 class SequenceMode : public Mode {
 public:
-    std::vector<unsigned int> getOrder(std::vector<std::shared_ptr<Playable>> list) override;
+    std::vector<size_t> getOrder(std::vector<std::shared_ptr<Playable>> list) override;
     SequenceMode() = default;
 };
 

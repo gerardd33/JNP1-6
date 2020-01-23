@@ -16,7 +16,7 @@ const char movieAllowedSymbols[] = { ',', '.', '!', '?', '\'', ':', ';', '-' };
 
 class Movie : public Playable {
 public:
-	bool containsObject(std::shared_ptr<Playable> playable) override { return (playable.get() == this); };
+	bool containsObject(const std::shared_ptr<Playable>& playable) override { return (playable.get() == this); };
 	void play() override;
 	explicit Movie(const File& file);
 

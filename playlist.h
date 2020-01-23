@@ -13,13 +13,13 @@
 
 class Playlist : public Playable, public std::enable_shared_from_this<Playlist> {
 public:
-	void add(std::shared_ptr<Playable> playable);
-	void add(std::shared_ptr<Playable> playable, int position);
+	void add(const std::shared_ptr<Playable>& playable);
+	void add(const std::shared_ptr<Playable>& playable, size_t position);
 	void remove();
-	void remove(int position);
+	void remove(size_t position);
 	void setMode(const std::shared_ptr<Mode>& mode);
 	void play() override;
-	bool containsObject(std::shared_ptr<Playable> playable) override;
+	bool containsObject(const std::shared_ptr<Playable>& playable) override;
 
 	explicit Playlist(const std::string& name);
 	~Playlist() override {

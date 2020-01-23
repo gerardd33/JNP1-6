@@ -1,12 +1,12 @@
 #include "playlist.h"
 
-void Playlist::add(std::shared_ptr<Playable> playable) {
+void Playlist::add(const std::shared_ptr<Playable>& playable) {
     if (playable->containsObject(shared_from_this()))
         throw CycleException();
     songList.push_back(playable);
 }
 
-void Playlist::add(std::shared_ptr<Playable> playable, int position) {
+void Playlist::add(const std::shared_ptr<Playable>& playable, size_t position) {
     if (playable->containsObject(shared_from_this()))
         throw CycleException();
     if (position > songList.size())
@@ -20,7 +20,7 @@ void Playlist::remove() {
     songList.pop_back();
 }
 
-void Playlist::remove(int position) {
+void Playlist::remove(size_t position) {
     if (position > songList.size())
         throw OutOfBoundsException();
     songList.erase(songList.begin() + position);
@@ -32,8 +32,8 @@ void Playlist::setMode(const std::shared_ptr<Mode>& newMode) {
 
 void Playlist::play() {
 		std::cout << "Playlist [" << name << "]\n";
-		std::vector<unsigned int> order = this->mode->getOrder(songList);
-    for (unsigned int x : order) {
+		std::vector<size_t> order = mode->getOrder(songList);
+    for (size_t x : order) {
 			songList[x]->play();
     }
 }
@@ -44,7 +44,7 @@ Playlist::Playlist(const std::string& newName) {
     mode = std::make_shared<SequenceMode>();
 }
 
-bool Playlist::containsObject(std::shared_ptr<Playable> playable) {
+bool Playlist::containsObject(const std::shared_ptr<Playable>& playable) {
     bool result = (playable.get() == this);
     for (auto it = songList.begin(); it != songList.end() && !result; ++it) {
         result = (*it)->containsObject(playable);
