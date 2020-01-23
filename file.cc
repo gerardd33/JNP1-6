@@ -19,9 +19,13 @@ File::File(const std::string& data) {
 
 	std::getline(iss, fieldName, '|');
 	metadata[TYPE_FIELD_NAME] = fieldName;
+	if (fieldName.empty() || find(fieldName.begin(), fieldName.end(), '|') != fieldName.end())
+		throw CorruptFileException();
 
 	while (getline(iss, fieldName, ':')) {
 		std::getline(iss, fieldValue, '|');
+		if (find(fieldName.begin(), fieldName.end(), '|') != fieldName.end())
+			throw CorruptFileException();
 		metadata[fieldName] = fieldValue;
 	}
 

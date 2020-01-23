@@ -1,9 +1,11 @@
 #ifndef JNP1_6_FILE_H
 #define JNP1_6_FILE_H
 
+#include "corruptFileException.h"
 #include <string>
 #include <map>
 #include <sstream>
+#include "algorithm"
 
 const std::string TYPE_FIELD_NAME = "|type";
 const std::string CONTENT_FIELD_NAME = "|content";
