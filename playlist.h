@@ -1,5 +1,3 @@
-#include <utility>
-
 #ifndef JNP1_6_PLAYLIST_H
 #define JNP1_6_PLAYLIST_H
 
@@ -7,35 +5,34 @@
 #include "mode.h"
 #include "playerException.h"
 #include <vector>
+#include <memory>
 
-class Playlist : public Playable {
+class Playlist : public Playable, public std::enable_shared_from_this<Playlist> {
 private:
     std::string name;
-    std::vector<Playable *> list;
-    Mode *mode;
+    std::vector<std::shared_ptr<Playable>> list;
+    std::shared_ptr<Mode> mode;
 public:
-    void add(Playable *playable);
+    void add(std::shared_ptr<Playable> playable);
 
-    void add(Playable *playable, int position);
+    void add(std::shared_ptr<Playable> playable, int position);
 
     void remove();
 
     void remove(int position);
 
-    void setMode(Mode *&mode);
+    void setMode(const std::shared_ptr<Mode> &mode);
 
-    void setMode(Mode *&&mode);
-
-    bool containsPlaylist(Playlist *playlist);
+    bool containsPlaylist(std::shared_ptr<Playlist> playlist);
 
     bool isPlaylist() override { return true; };
 
     void play() override;
 
-    explicit Playlist(std::string name) : name(std::move(name)), list(std::vector<Playable *>()), mode(nullptr) {};
+    explicit Playlist(const std::string &name);
 
     ~Playlist() {
-        delete this->mode;
+        this->mode.reset();
     };
 };
 
