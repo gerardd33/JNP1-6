@@ -7,7 +7,6 @@
 #include "corruptContentException.h"
 #include <iostream>
 #include <algorithm>
-#include <memory>
 
 const std::string MOVIE_YEAR_FIELD_NAME = "year";
 const std::string MOVIE_TITLE_FIELD_NAME = "title";

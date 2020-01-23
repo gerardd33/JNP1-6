@@ -7,7 +7,6 @@
 #include "outOfBoundsException.h"
 #include "cycleException.h"
 #include <vector>
-#include <memory>
 
 class Playlist : public Playable, public std::enable_shared_from_this<Playlist> {
 public:

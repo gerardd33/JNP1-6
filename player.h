@@ -2,13 +2,13 @@
 #define JNP1_6_PLAYER_H
 
 
-#include "playlist.h"
 #include "file.h"
+#include "song.h"
+#include "movie.h"
+#include "playlist.h"
 #include "sequenceMode.h"
 #include "shuffleMode.h"
 #include "oddEvenMode.h"
-#include "song.h"
-#include "movie.h"
 #include "unsupportedTypeException.h"
 
 class Player {
